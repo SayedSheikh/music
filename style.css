@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Ubuntu&family=Varela+Round&display=swap");
+
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+nav ul {
+  height: 65px;
+  background-color: black;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 50px;
+  padding: 0 8px;
+}
+.container {
+  font-family: "Varela Round", serif;
+  background-color: black;
+  color: white;
+  min-height: 71.2vh;
+  width: 75%;
+  margin: 12px auto;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-image: url("./imges/BG.svg");
+  background-size: cover;
+  /* overflow: auto; */
+}
+.bottom {
+  width: 100vw;
+  position: sticky;
+  bottom: 0;
+  /* position: fixed; */
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.play {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  cursor: pointer;
+}
+.icons {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons i {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+#progressBar {
+  width: 75vw;
+  cursor: pointer;
+}
+.songList {
+  width: 30vw;
+}
+.songItem {
+  background-color: white;
+  color: black;
+  height: 40px;
+  width: 264px;
+  display: flex;
+  margin: 12px 0;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 35px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.songItem img {
+  width: 32px;
+  border-radius: 30px;
+}
+.timeStamp i {
+  cursor: pointer;
+}
+.songPlay {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 12%;
+  bottom: 13%;
+}
+.songPlay img {
+  width: 60px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.audioTrack {
+  opacity: 1;
+}
